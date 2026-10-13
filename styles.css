@@ -1,0 +1,27 @@
+:root { color-scheme: light; font-family: system-ui, sans-serif; color: #25372c; background: #f2f4ed; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 64px 20px; }
+.app { max-width: 640px; margin: auto; padding: 40px; background: #fffefb; border: 1px solid #dfe5d8; border-radius: 24px; box-shadow: 0 16px 48px #25372c0a; }
+.eyebrow { font-size: .72rem; letter-spacing: .15em; color: #61794d; font-weight: 700; }
+h1 { font-size: clamp(2rem, 6vw, 3rem); letter-spacing: -.05em; margin: 12px 0; }
+.intro { color: #647064; line-height: 1.6; margin-bottom: 32px; }
+label { display: block; font-size: .85rem; font-weight: 600; margin-bottom: 8px; }
+.input-row { display: flex; gap: 10px; }
+input[type=text], input:not([type]) { min-width: 0; width: 100%; padding: 14px; border: 1px solid #bbc8b4; border-radius: 10px; font: inherit; background: white; }
+button { font: inherit; cursor: pointer; border-radius: 10px; border: 0; padding: 12px 18px; background: #355c3c; color: white; white-space: nowrap; }
+button:hover { background: #27482d; }
+:focus-visible { outline: 3px solid #b58b37; outline-offset: 3px; }
+#feedback { min-height: 1.4em; font-size: .85rem; color: #795c29; }
+.list-heading { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #e4e8df; }
+h2 { font-size: 1rem; }
+#task-count { font-size: .8rem; color: #647064; }
+ul { list-style: none; padding: 0; margin: 0; }
+.task { display: flex; gap: 12px; align-items: center; padding: 16px 0; border-bottom: 1px solid #e4e8df; }
+.task label { display: flex; gap: 12px; align-items: center; flex: 1; min-width: 0; margin: 0; font-size: 1rem; font-weight: 400; cursor: pointer; }
+.task input { width: 19px; height: 19px; flex-shrink: 0; accent-color: #355c3c; }
+.task span { overflow-wrap: anywhere; }
+.task.completed span { text-decoration: line-through; color: #7b8578; }
+.delete { background: transparent; color: #8b413a; font-size: .8rem; padding: 8px; }
+.delete:hover { background: #fbefec; }
+#empty-state { text-align: center; color: #75816e; font-size: .9rem; line-height: 1.6; padding: 24px 12px; }
+@media (max-width: 480px) { body { padding: 24px 12px; } .app { padding: 24px; } .input-row { flex-direction: column; } }

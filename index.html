@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My to-do list</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <p class="eyebrow">ONE THING AT A TIME</p>
+    <h1>My to-do list</h1>
+    <p class="intro">Make room for what matters. Your tasks stay saved in this browser.</p>
+    <form id="task-form">
+      <label for="task-input">New task</label>
+      <div class="input-row">
+        <input id="task-input" name="task" placeholder="What needs doing?" maxlength="300" required autocomplete="off">
+        <button type="submit">Add task</button>
+      </div>
+    </form>
+    <p id="feedback" role="status"></p>
+    <div class="list-heading"><h2>Your tasks</h2><span id="task-count"></span></div>
+    <ul id="task-list" aria-label="Tasks"></ul>
+    <p id="empty-state">A little space to start fresh. Add your first task above.</p>
+  </main>
+</body>
+</html>
